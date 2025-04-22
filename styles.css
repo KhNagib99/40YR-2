@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+  margin: 10px auto;
+  display: block;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#canvas-container {
+  position: relative;
+  display: inline-block;
+}
+
+canvas {
+  border: 1px solid #ddd;
+  max-width: 100%;
+  touch-action: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d7000f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
