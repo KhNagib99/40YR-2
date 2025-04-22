@@ -54,3 +54,10 @@ button:active {
   background-color: #003F79;
   transform: translateY(0);
 }
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+  }
+}
