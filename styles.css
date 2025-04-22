@@ -32,12 +32,25 @@ canvas {
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #d7000f;
-  color: #fff;
+  background-color: #005BAC; /* IDLC blue tone */
+  color: white;
+  padding: 12px 24px;
   border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: #004B92;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #003F79;
+  transform: translateY(0);
 }
