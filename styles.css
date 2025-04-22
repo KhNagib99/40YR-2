@@ -61,3 +61,6 @@ button:active {
     font-size: 18px;
   }
 }
+.primary-btn {
+  background-color: #0073e6;
+}
