@@ -1,66 +1,69 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
   text-align: center;
+  background: #f0f2f5;
 }
 
-.container {
+header {
+  background-color: #ffffff;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .logo {
-  width: 120px;
-  margin: 10px auto;
-  display: block;
+  height: 50px;
+  vertical-align: middle;
 }
 
 h1 {
-  font-size: 24px;
-  margin: 10px 0;
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-#canvas-container {
+main {
+  padding: 20px;
+}
+
+.canvas-container {
+  max-width: 90vw;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #ccc;
   position: relative;
-  display: inline-block;
 }
 
 canvas {
-  border: 1px solid #ddd;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   touch-action: none;
 }
 
+input[type="file"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
 button {
-  background-color: #005BAC; /* IDLC blue tone */
-  color: white;
+  display: block;
+  margin: 20px auto;
   padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #d72f2f;
+  color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
 }
 
 button:hover {
-  background-color: #004B92;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  transform: translateY(-2px);
+  background-color: #b12828;
 }
 
-button:active {
-  background-color: #003F79;
-  transform: translateY(0);
-}
-@media (max-width: 600px) {
-  button {
-    width: 100%;
-    padding: 14px;
-    font-size: 18px;
-  }
-}
-.primary-btn {
-  background-color: #0073e6;
+.loading {
+  display: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
