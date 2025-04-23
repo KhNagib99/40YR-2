@@ -4,18 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IDLC Photo Frame</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
     <img src="assets/logo.png" alt="IDLC Logo" class="logo" />
-    <h1>Thank You for being a part of this journey of 4 decades!</h1>
-    <input type="file" id="photoUpload" accept="image/*" />
-    <div id="canvas-container">
-      <canvas id="photoCanvas" width="500" height="500"></canvas>
+    <h1>IDLC Photo Frame</h1>
+  </header>
+
+  <main>
+    <div class="canvas-container">
+      <canvas id="canvas" width="1080" height="1080"></canvas>
     </div>
-    <button class="primary-btn">Download</button>
-  </div>
+
+    <input type="file" id="upload" accept="image/*" />
+    <button id="download">Download Image</button>
+  </main>
+
+  <div class="loading" id="loading">Loading...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/panzoom@9.4.0/dist/panzoom.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
